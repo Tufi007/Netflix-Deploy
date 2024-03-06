@@ -20,7 +20,9 @@ const limit= limiter({
     message:'too many requests from the same ip address try again after sometimer....'
 });
 app.use('/user',limit);
-app.use(cors());
+app.use(cors({
+    origin:"*"
+}));
 app.use(express.json({limit:50000000}));
 
 app.use(hpp({whitelist:['price','duration','releaseYear','ratings','totalRating','genres','totalhoures']}));
