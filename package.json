@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"npm install \"\"npm run start-server \" \"npm run start-client\"",
+    "build":"concurrently \"npm run install-server\" \"npm run install-client\" \"npm run build-client\"",
     "install-server": "cd Backend && npm install",
     "start-server": "cd Backend && npm start",
     "install-client": "cd Frontend && npm install",
@@ -12,5 +14,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
