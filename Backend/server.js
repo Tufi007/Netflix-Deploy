@@ -12,7 +12,7 @@ mongoose.connect(process.env.CONN_STR).then((conn)=>{
     console.log('database connected');
 });
 
-PORT= process.env.PORT;
+PORT= process.env.PORT||8000;
 app.listen(PORT,(req,res)=>{
     console.log('server connected');
 })
