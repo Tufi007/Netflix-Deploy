@@ -23,6 +23,7 @@ lerna-debug.log*
 #nodemodules
 node_modules
 .env
+config.env
 
 # Local History for Visual Studio Code
 .history/
