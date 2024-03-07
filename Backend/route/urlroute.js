@@ -4,9 +4,7 @@ const authController = require("../controller/authcontroller");
 const router = express.Router();
 router
   .route("/")
-  .get(
-    // authController.userverify,
-     moviecrud.getallmovies)
+  .get(moviecrud.getallmovies)
   .post(moviecrud.creatmovie);
 router
   .route("/highestRated")
