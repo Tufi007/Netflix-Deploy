@@ -1,5 +1,5 @@
-node_modules
-.env
+
+
 # Logs
 logs
 *.log
@@ -9,5 +9,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# node_modules
+node_modules
+.env
+dist
+dist-ssr
+*.local
 
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
